@@ -16,6 +16,9 @@
 	<!-- Firebase Database -->
 	<script src='https://cdn.firebase.com/js/client/1.1.1/firebase.js'></script>
 
+	<!-- JavaScript File -->
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,7 +65,7 @@
     	<div class="row">
 			<div class="col-xs-10 col-xs-offset-1">
 					<img src="images/main-logo.png" id="header-logo">
-				    <h2 class="invite-btn"><a href="#form">get started</a></h2>
+				    <h3 class="invite-btn"><a href="#form">get started</a></h3>
             	<p>A smarter home for a happier you.</p>
    			</div>
 			</div> 
@@ -113,14 +116,14 @@
             			<p>Be the first to experience painless homeownership.</p>
             		</div>
       			</div>
-   				<div class="row" id="form-fields">
+   				<form class="row" id="form-fields">
             		<div class="col-xs-10 col-xs-offset-1" id="form-inputs">
 
-            			<input type="email" id="jsEMail">  
+            			<input type="email" id="jsEmail">  
             			<input type="submit" id="jsSumbit">
             		
             		</div>
-        		</div>
+        		</form>
          	</div>
       	</div>
     </div><!-- /.container -->
@@ -129,30 +132,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script>
-		$(function() {
-		  $('a[href*=#]:not([href=#])').click(function() {
-		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		      if (target.length) {
-		        $('html,body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000);
-		        return false;
-		      }
-		    }
-		  });
-		});
-    </script>
+    <script type="text/javascript" src="js/main.js"></script>
 
-    <script>
-		var myDataRef = new Firebase("https://amber-inferno-4641.firebaseio.com/");
-	      $("#jsEmail").submit {
-	      	myDataRef.set(email: $("#jsEmail").val());
-	        }
-	      });
-    </script>
+
 
   </body>
 </html>
