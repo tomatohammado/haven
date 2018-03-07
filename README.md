@@ -1,4 +1,5 @@
-myhavn
-======
+# myhavn
 
-myhavn git temp hosting
+Submission for General Assembly Hackathon 2015
+
+Winner!
